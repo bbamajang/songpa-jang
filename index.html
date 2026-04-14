@@ -49,4 +49,102 @@
             border: 1px solid #f1f1f1; box-shadow: 0 4px 12px rgba(0,0,0,0.03);
         }
         .promise-card h3 { margin: 0 0 10px 0; font-size: 17px; font-weight: 700; color: #333; }
-        .promise-card p { margin: 0; font-size: 14.5px; color: var(--text-muted); line-height: 1.
+        .promise-card p { margin: 0; font-size: 14.5px; color: var(--text-muted); line-height: 1.6; }
+
+        /* 팩트체크 박스 스타일 */
+        .fact-check {
+            margin-top: 15px; padding: 12px; background: #fff9f5; border-radius: 10px; 
+            font-size: 13px; border: 1px solid #ffe0cc;
+        }
+        .fact-check p { color: #d35400 !important; font-weight: 700; margin-bottom: 8px !important; }
+        .fact-check ul { list-style: none; padding: 0; margin: 0; color: #555; line-height: 1.6; }
+
+        .links { padding: 25px 20px; display: flex; flex-direction: column; gap: 12px; }
+        .link-item {
+            display: flex; align-items: center; justify-content: center;
+            padding: 18px; background: white; border: 1.5px solid #e9ecef;
+            border-radius: 16px; text-decoration: none; color: #495057;
+            font-weight: 600; font-size: 15px;
+        }
+        .link-item.active { background: var(--primary-orange); color: white; border: none; box-shadow: 0 8px 20px rgba(255, 102, 0, 0.3); }
+
+        .info-section { margin: 20px; padding: 25px; background: #fafafa; border-radius: 24px; border: 1px dashed #ddd; }
+        .info-item { display: flex; margin-bottom: 12px; font-size: 14px; }
+        .info-label { font-weight: 700; color: var(--primary-orange); width: 85px; flex-shrink: 0; }
+
+        .footer { text-align: center; font-size: 12px; color: #adb5bd; padding: 40px 0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="profile-header">
+        <div class="profile-img"></div>
+        <div class="badge">개혁신당 예비후보</div>
+        <h1>송파를 새롭게,<br><span style="color: var(--primary-orange);">장성혁</span>이 바꿉니다</h1>
+        <p style="color: var(--text-muted); font-size: 15px; margin-top: 15px;">"8년 차 구매 전문가의 디테일로<br>송파구의 예산 낭비를 막겠습니다"</p>
+    </div>
+
+    <div class="section-title">주요 공약 & 팩트체크</div>
+    <div class="promise-grid">
+        
+        <div class="promise-card" style="border-left: 5px solid var(--primary-orange);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                <h3>🚫 외유성 출장·예산 낭비 근절</h3>
+                <span style="font-size: 10px; background: #eee; padding: 2px 6px; border-radius: 4px;">핵심공약</span>
+            </div>
+            <p><strong>"베끼기식 보고서는 이제 그만"</strong><br>
+            8년 차 구매 전문가의 눈으로 송파구의회 국외연수 전 과정을 투명하게 혁신하겠습니다.</p>
+            
+            <div class="fact-check">
+                <p>📍 실태 보고</p>
+                <ul>
+                    <li>• <strong>[서울시옴부즈만]</strong> 송파구 포함 자치구 외유성 연수 및 보고서 표절 지적.</li>
+                    <li>• <strong>[권익위]</strong> 전국 지방의회 95% 이상에서 여비 부정 적발.</li>
+                    <li>• <strong>[분석]</strong> 지방의회 보고서 4권 중 1권은 표절 기준 초과.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="promise-card">
+            <h3>👶 육아 혁신: 두 아이 아빠의 진심</h3>
+            <p>송파에서 두 아이를 키우는 아빠로서, 부모들이 체감할 수 있는 실질적인 보육 시설 확충과 안전 인프라를 구축하겠습니다.</p>
+        </div>
+
+        <div class="promise-card">
+            <h3>📑 전문 혁신: 공부하는 구의원</h3>
+            <p>세무사 시험을 준비하며 쌓은 법률·세무 지식으로 주민들에게 실질적인 도움이 되는 조례를 직접 발안하겠습니다.</p>
+        </div>
+    </div>
+
+    <div class="section-title">연결하기</div>
+    <div class="links">
+        <a href="https://[아이디].github.io/my-heatmap/" class="link-item">📍 장성혁의 발로 뛴 송파 활동 지도</a>
+        <a href="https://instagram.com/[아이디]" class="link-item">📸 인스타그램 바로가기</a>
+        <a href="tel:010-0000-0000" class="link-item active">🍊 장성혁에게 직접 의견 전달하기</a>
+    </div>
+
+    <div class="section-title">프로필</div>
+    <div class="info-section">
+        <div class="info-item">
+            <span class="info-label">학력</span>
+            <span class="info-value">고려대학교 지구환경과학과 졸업</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">경력</span>
+            <span class="info-value">8년 차 구매/조달 전문가 (비료 제조 기업)</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">키워드</span>
+            <span class="info-value">#개혁신당 #젊은아빠 #구매전문가 #세무사준비생</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        송파구의회 의원 선거 예비후보 장성혁 캠페인<br>
+        © 2026 Reform Party Songpa.
+    </div>
+</div>
+
+</body>
+</html>
