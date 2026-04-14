@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>송파구의원 예비후보 장성혁</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --main-color: #005596; --accent-color: #f8f9fa; }
+        body { margin: 0; font-family: 'Noto Sans KR', sans-serif; line-height: 1.6; color: #333; word-break: keep-all; }
+        
+        /* 헤더/히어로 섹션 */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://via.placeholder.com/800x1000'); /* 여기에 성혁님 사진 주소 */
+            background-size: cover; background-position: center;
+            height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
+            color: white; text-align: center; padding: 20px;
+        }
+        .hero h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 10px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.2rem; font-weight: 300; }
+
+        /* 섹션 공통 */
+        section { padding: 60px 20px; max-width: 800px; margin: 0 auto; }
+        h2 { font-size: 1.8rem; border-left: 5px solid var(--main-color); padding-left: 15px; margin-bottom: 30px; }
+
+        /* 프로필 카드 */
+        .profile-card { background: var(--accent-color); padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .profile-item { margin-bottom: 15px; display: flex; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+        .label { font-weight: 800; width: 100px; color: var(--main-color); }
+
+        /* 핵심 가치 (육각형 이미지 강조) */
+        .values { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .value-box { background: white; border: 1px solid #eee; padding: 20px; border-radius: 10px; text-align: center; }
+        .value-box strong { display: block; margin-bottom: 10px; font-size: 1.1rem; color: var(--main-color); }
+
+        /* 하단 버튼 */
+        .contact-btn { 
+            display: block; width: 100%; background: var(--main-color); color: white; text-align: center; 
+            padding: 20px 0; text-decoration: none; font-weight: 800; font-size: 1.2rem; position: fixed; bottom: 0; left: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <p>송파의 내일을 준비하는 88년생 젊은 일꾼</p>
+        <h1>성실한 아빠, 구매 전문가<br>장성혁입니다</h1>
+    </header>
+
+    <section>
+        <h2>장성혁은 누구인가?</h2>
+        <div class="profile-card">
+            <div class="profile-item"><span class="label">이름</span><span>장성혁 (1988년생)</span></div>
+            <div class="profile-item"><span class="label">학력</span><span>고려대학교 지구환경과학과 졸업</span></div>
+            <div class="profile-item"><span class="label">경력</span><span>8년차 구매/조달 전문가 (비료 제조 기업)</span></div>
+            <div class="profile-item"><span class="label">가족</span><span>두 아이를 키우는 송파구의 평범한 아빠</span></div>
+        </div>
+    </section>
+
+    <section style="background: #fdfdfd;">
+        <h2>장성혁의 3대 약속</h2>
+        <div class="values">
+            <div class="value-box">
+                <strong>꼼꼼한 살림꾼</strong>
+                8년 구매 전문가의 경험으로 구청 예산 낭비를 막겠습니다.
+            </div>
+            <div class="value-box">
+                <strong>아이 키우기 좋은 송파</strong>
+                두 아이의 아빠로서 교육과 보육 현안을 직접 챙기겠습니다.
+            </div>
+            <div class="value-box">
+                <strong>육각형 인재</strong>
+                정직하고 다재다능한 젊은 열정으로 지역구를 발로 뛰겠습니다.
+            </div>
+            <div class="value-box">
+                <strong>전문성 있는 의정</strong>
+                세무사 시험을 준비하는 자세로 법과 조례를 철저히 공부하겠습니다.
+            </div>
+        </div>
+    </section>
+
+    <section style="padding-bottom: 100px;">
+        <h2>구민 여러분께 드리는 글</h2>
+        <p>
+            저는 화려한 정치인보다 <strong>'성실한 이웃'</strong>이 되고 싶습니다. 
+            기업에서 원가를 절감하고 효율을 높이던 그 실력으로, 
+            우리 송파구민의 세금이 한 푼도 헛되이 쓰이지 않도록 감시하겠습니다. 
+            내 아이가 자라날 이곳 송파를 위해, 젊은 아빠 장성혁이 앞장서겠습니다.
+        </p>
+    </section>
+
+    <a href="tel:010-0000-0000" class="contact-btn">장성혁에게 직접 의견 전달하기</a>
+
+</body>
+</html>
