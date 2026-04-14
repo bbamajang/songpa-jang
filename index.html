@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-orange: #ff6600; /* 개혁신당 공식 오렌지 */
+            --primary-orange: #ff6600; 
             --soft-orange: #fff5ed;
             --bg-gray: #f8f9fa;
             --text-dark: #212529;
@@ -23,7 +23,6 @@
 
         .container { width: 100%; max-width: 480px; min-height: 100vh; background: white; padding-bottom: 80px; }
 
-        /* 상단 프로필 영역: 오렌지 그라데이션 적용 */
         .profile-header {
             text-align: center; padding: 50px 20px;
             background: linear-gradient(180deg, var(--soft-orange) 0%, #ffffff 100%);
@@ -32,7 +31,7 @@
             width: 140px; height: 140px; border-radius: 50%;
             background: #eee; margin: 0 auto 20px;
             border: 5px solid white; box-shadow: 0 15px 30px rgba(255, 102, 0, 0.15);
-            background-image: url('profile.jpg'); /* 성혁님 사진 파일명 */
+            background-image: url('profile.jpg'); 
             background-size: cover; background-position: center;
         }
         .profile-header h1 { font-size: 26px; font-weight: 800; margin: 10px 0; letter-spacing: -1px; }
@@ -41,93 +40,13 @@
             padding: 5px 15px; border-radius: 30px; font-size: 14px; font-weight: 700; margin-bottom: 10px;
         }
 
-        /* 공약 섹션 */
         .section-title { padding: 30px 20px 15px; font-size: 19px; font-weight: 800; color: var(--primary-orange); display: flex; align-items: center; }
         .section-title::after { content: ''; flex: 1; height: 1px; background: #eee; margin-left: 15px; }
 
-        .promise-grid { padding: 0 20px; display: grid; gap: 12px; }
+        .promise-grid { padding: 0 20px; display: grid; gap: 15px; }
         .promise-card {
             background: white; padding: 22px; border-radius: 20px;
             border: 1px solid #f1f1f1; box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-            transition: all 0.2s ease;
         }
         .promise-card h3 { margin: 0 0 10px 0; font-size: 17px; font-weight: 700; color: #333; }
-        .promise-card p { margin: 0; font-size: 14.5px; color: var(--text-muted); line-height: 1.6; }
-        .promise-card:hover { border-color: var(--primary-orange); }
-
-        /* 링크 버튼: 세련된 외곽선 타입 */
-        .links { padding: 25px 20px; display: flex; flex-direction: column; gap: 12px; }
-        .link-item {
-            display: flex; align-items: center; justify-content: center;
-            padding: 18px; background: white; border: 1.5px solid #e9ecef;
-            border-radius: 16px; text-decoration: none; color: #495057;
-            font-weight: 600; font-size: 15px; transition: all 0.2s;
-        }
-        .link-item.active { background: var(--primary-orange); color: white; border: none; box-shadow: 0 8px 20px rgba(255, 102, 0, 0.3); }
-
-        /* 경력 요약 (차별화된 하단 박스) */
-        .info-section { margin: 20px; padding: 25px; background: #fafafa; border-radius: 24px; border: 1px dashed #ddd; }
-        .info-item { display: flex; margin-bottom: 12px; font-size: 14px; }
-        .info-label { font-weight: 700; color: var(--primary-orange); width: 85px; flex-shrink: 0; }
-        .info-value { color: #444; }
-
-        .footer { text-align: center; font-size: 12px; color: #adb5bd; padding: 40px 0; }
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <div class="profile-header">
-        <div class="profile-img"></div>
-        <div class="badge">개혁신당 예비후보</div>
-        <h1>송파를 새롭게,<br><span style="color: var(--primary-orange);">장성혁</span>이 바꿉니다</h1>
-        <p style="color: var(--text-muted); font-size: 15px; margin-top: 15px;">"8년 차 구매 전문가의 디테일로<br>송파구의 예산 낭비를 막겠습니다"</p>
-    </div>
-
-    <div class="section-title">주요 공약</div>
-    <div class="promise-grid">
-        <div class="promise-card">
-            <h3>💰 예산 혁신: 원가 절감의 전문가</h3>
-            <p>비료 기업 8년 구매 경력을 살려 송파구의 모든 사업 예산을 꼼꼼히 검토하고, 세금 낭비를 철저히 감시하겠습니다.</p>
-        </div>
-        <div class="promise-card">
-            <h3>🍼 육아 혁신: 두 아이 아빠의 진심</h3>
-            <p>송파에서 두 아이를 키우는 아빠로서, 부모들이 체감할 수 있는 실질적인 보육 시설 확충과 안전 인프라를 구축하겠습니다.</p>
-        </div>
-        <div class="promise-card">
-            <h3>📑 전문 혁신: 공부하는 구의원</h3>
-            <p>세무사 시험을 준비하며 쌓은 법률·세무 지식으로 주민들에게 실질적인 도움이 되는 조례를 직접 발안하겠습니다.</p>
-        </div>
-    </div>
-
-    <div class="section-title">연결하기</div>
-    <div class="links">
-        <a href="https://[성혁님아이디].github.io/my-heatmap/" class="link-item">📍 장성혁의 발로 뛴 송파 활동 지도</a>
-        <a href="https://instagram.com/[성혁님아이디]" class="link-item">📸 인스타그램 바로가기</a>
-        <a href="tel:010-0000-0000" class="link-item active">🍊 장성혁에게 직접 의견 전달하기</a>
-    </div>
-
-    <div class="section-title">프로필</div>
-    <div class="info-section">
-        <div class="info-item">
-            <span class="info-label">학력</span>
-            <span class="info-value">고려대학교 지구환경과학과 졸업</span>
-        </div>
-        <div class="info-item">
-            <span class="info-label">경력</span>
-            <span class="info-value">8년 차 구매/조달 전문가 (비료 제조 기업)</span>
-        </div>
-        <div class="info-item">
-            <span class="info-label">키워드</span>
-            <span class="info-value">#개혁신당 #젊은아빠 #구매전문가 #세무사준비생</span>
-        </div>
-    </div>
-
-    <div class="footer">
-        송파구의회 의원 선거 예비후보 장성혁 캠페인<br>
-        © 2026 Reform Party Songpa.
-    </div>
-</div>
-
-</body>
-</html>
+        .promise-card p { margin: 0; font-size: 14.5px; color: var(--text-muted); line-height: 1.
